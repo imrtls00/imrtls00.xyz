@@ -3,23 +3,21 @@ import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Navbar } from './components/nav';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { PreloadResources } from './preload';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://imrtls00.xyz'),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Sameer Faisal',
+    template: '%s | Sameer Faisal',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Designer, Developer, writer, and creator.',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
+    title: 'Sameer Faisal',
+    description: 'Designer, Developer, writer, and creator.',
+    url: 'https://imrtls00.xyz',
+    siteName: 'Sameer Faisal',
     locale: 'en_US',
     type: 'website',
   },
@@ -35,12 +33,12 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Lee Robinson',
+    title: 'Sameer Faisal',
     card: 'summary_large_image',
   },
   verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
+    google: 'null',
+    yandex: 'null',
   },
 };
 
@@ -67,8 +65,6 @@ export default function RootLayout({
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
-          <Analytics />
-          <SpeedInsights />
           <PreloadResources />
         </main>
       </body>
